@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile">
+
+    <!-- Header with App Name -->
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HerSafeSpace"
+        android:textSize="20sp"
+        android:textColor="#FFA500"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Profile Card -->
+    <LinearLayout
+        android:id="@+id/profile_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:background="@drawable/round_button"
+        android:padding="16dp"
+        android:layout_below="@id/tv_app_name"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
+
+        <!-- Profile Image -->
+        <ImageView
+            android:id="@+id/img_profile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/person_image"
+            android:layout_marginBottom="16dp" />
+
+        <!-- User Info Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Name Field -->
+            <TextView
+                android:id="@+id/tv_name_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="#FFA500"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Divya Khanolkar"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+            <!-- Mobile Field -->
+            <TextView
+                android:id="@+id/tv_mobile_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile No."
+                android:textColor="#FFA500"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9004254371"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Email Field -->
+            <TextView
+                android:id="@+id/tv_email_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email ID"
+                android:textColor="#FFA500"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="divya.khanolkar@somaiya.edu"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+            <!-- Age Group Field -->
+            <TextView
+                android:id="@+id/tv_age_group_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age Group"
+                android:textColor="#FFA500"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_age_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select your age group"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Location Field -->
+            <TextView
+                android:id="@+id/tv_location_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textColor="#FFA500"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select your location"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Edit Icons -->
+        <ImageView
+            android:id="@+id/btn_edit_name"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp" />
+    </LinearLayout>
+
+    <!-- Action Buttons Section -->
+    <!-- Action Buttons Section -->
+    <GridLayout
+        android:id="@+id/action_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/profile_card"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:padding="8dp">
+
+        <!-- Friends Button -->
+        <Button
+            android:id="@+id/btn_friends"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Friends"
+            android:background="@drawable/round_button"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+
+        <!-- Feedback Button -->
+        <Button
+            android:id="@+id/btn_feedback"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Feedback"
+            android:background="@drawable/round_button"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+
+        <!-- Terminate Account Button -->
+        <Button
+            android:id="@+id/btn_terminate_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Terminate Account"
+            android:background="@drawable/round_button"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+
+        <!-- Log Out Button -->
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Log out"
+            android:background="@drawable/round_button"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+    </GridLayout>
+
+</RelativeLayout>

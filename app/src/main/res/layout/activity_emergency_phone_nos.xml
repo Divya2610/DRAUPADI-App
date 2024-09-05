@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="National Numbers"
+        android:textColor="#FFD466"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_national_helpline"
+        android:layout_width="379dp"
+        android:layout_height="78dp"
+        android:layout_below="@+id/title"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/round_button"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical|start"
+        android:paddingStart="16dp"
+        android:text="112\nNational helpline"
+        android:textColor="@color/yellow" />
+
+    <Button
+        android:id="@+id/btn_police"
+        android:layout_width="379dp"
+        android:layout_height="78dp"
+        android:layout_below="@+id/btn_national_helpline"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/round_button"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical|start"
+        android:paddingStart="16dp"
+        android:text="100\nPolice"
+        android:textColor="@color/yellow" />
+
+    <Button
+        android:id="@+id/btn_women_helpline"
+        android:layout_width="379dp"
+        android:layout_height="78dp"
+        android:layout_below="@+id/btn_police"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/round_button"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical|start"
+        android:paddingStart="16dp"
+        android:text="1091\nWomen helpline"
+        android:textColor="@color/yellow" />
+
+    <Button
+        android:id="@+id/btn_child_helpline"
+        android:layout_width="379dp"
+        android:layout_height="78dp"
+        android:layout_below="@+id/btn_women_helpline"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/round_button"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical|start"
+        android:paddingStart="16dp"
+        android:text="1098\nChild helpline"
+        android:textColor="@color/yellow" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFF9E5"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+             />
+
+        <ImageButton
+            android:id="@+id/btn_bell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_exclamation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent" />
+    </RelativeLayout>
+
+</RelativeLayout>

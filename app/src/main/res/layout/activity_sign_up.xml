@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#FFF8E1"
+    tools:context=".sign_up"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign-up"
+        android:textSize="30sp"
+        android:textColor="#FFA726"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Full name"
+        android:padding="15dp"
+        android:background="@drawable/round_edittext"
+        android:layout_marginBottom="20dp"
+        android:drawablePadding="10dp"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Email"
+        android:padding="15dp"
+        android:background="@drawable/round_edittext"
+        android:layout_marginBottom="20dp"
+        android:drawablePadding="10dp"/>
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:background="@drawable/round_edittext"
+        android:layout_marginBottom="20dp"
+        android:drawablePadding="10dp"/>
+
+    <EditText
+        android:id="@+id/confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter confirm Password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:background="@drawable/round_edittext"
+        android:layout_marginBottom="20dp"
+        android:drawablePadding="10dp"/>
+
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your phone no."
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:background="@drawable/round_edittext"
+        android:layout_marginBottom="20dp"
+        android:drawablePadding="10dp"/>
+
+    <!-- Horizontal LinearLayout for Radio Buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radio_male"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FFB964"
+            android:text="Male"
+            android:textColor="#FFB964"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/radio_female"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FFB964"
+            android:text="Female"
+            android:textColor="#FFB964"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+
+        <TextView
+            android:id="@+id/forgetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget Password"
+            android:textColor="#FFA726"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:gravity="end"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/logupButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign-up"
+        android:background="@drawable/round_button"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="4dp"
+        />
+
+    <TextView
+        android:id="@+id/orSignInWith"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or Sign in with"
+        android:textColor="#FFA726"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <!--    <GridLayout-->
+    <!--        android:id="@+id/thirdPartySignIn"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="34dp"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:layout_marginBottom="20dp"-->
+    <!--        android:alignmentMode="alignBounds"-->
+    <!--        android:columnCount="3"-->
+    <!--        android:rowCount="1"></GridLayout>-->
+    <Button
+        android:id="@+id/signin_Button"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_button"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="-50px"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</LinearLayout>

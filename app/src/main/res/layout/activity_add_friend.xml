@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/yellow">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/yellow">
+
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Add Friend"
+            android:textColor="@color/orange"
+            android:textSize="24sp" />
+
+
+    </LinearLayout>
+    <!-- Phone Number Input -->
+    <LinearLayout
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/round_edittext"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="+91"
+            android:textColor="@color/orange"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="Phone Number"
+            android:paddingStart="8dp"
+            android:textColor="@color/orange" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Contacts"
+            android:src="@drawable/contact_emo"
+            app:tint="@color/orange" />
+
+    </LinearLayout>
+
+    <!-- SOS Contact Checkbox and Info -->
+    <CheckBox
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make this person my SOS contact"
+        android:textColor="@color/orange"
+        android:buttonTint="@color/orange"
+        android:layout_marginTop="16dp" />
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Who is an SOS contact?"-->
+    <!--        android:textColor="@color/orange"-->
+    <!--        android:padding="8dp"-->
+    <!--        android:layout_marginTop="8dp" />-->
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="An SOS contact receives your SOS alerts during an emergency"-->
+    <!--        android:textColor="@color/orange"-->
+    <!--        android:layout_marginTop="4dp"-->
+    <!--        android:layout_marginBottom="24dp" />-->
+
+    <!-- Search Input -->
+    <RelativeLayout
+        android:id="@+id/search_box"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/tap_to_select"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:elevation="4dp"
+        android:clipToOutline="true"
+        android:backgroundTint="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp">
+
+        <!-- Search Icon -->
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/search_img" />
+
+        <!-- Search Input -->
+        <EditText
+            android:id="@+id/search_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/search_icon"
+            android:layout_marginStart="8dp"
+            android:hint="Type to Select"
+            android:textColorHint="#FFB964"
+            android:background="@android:color/transparent"
+            android:inputType="text" />
+    </RelativeLayout>
+    <!-- Contact List -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_marginTop="8dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="User Icon"
+                app:tint="@color/orange" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingStart="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aarushi Savla"
+                    android:textColor="@color/orange"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1234567890"
+                    android:textColor="@color/orange" />
+            </LinearLayout>
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/more_option"-->
+<!--                android:contentDescription="More Options"-->
+<!--            />-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_marginTop="8dp">
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingStart="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aarushi Savla"
+                    android:textColor="@color/orange"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1234567890"
+                    android:textColor="@color/orange" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/more_option"
+                android:contentDescription="More Options"
+                app:tint="@color/orange" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Add SOS Contact Button -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add SOS Contact"
+        android:background="@drawable/round_edittext"
+        android:textColor="@color/orange"
+        android:layout_marginTop="24dp"
+        android:padding="16dp" />
+
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:background="@color/light_yellow"-->
+    <!--        android:padding="16dp"-->
+    <!--        android:layout_gravity="bottom"-->
+    <!--        android:gravity="center">-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:src="@drawable/ic_phone"-->
+    <!--            android:contentDescription="Phone" />-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:src="@drawable/ic_alert"-->
+    <!--            android:contentDescription="Alert"-->
+    <!--            android:layout_marginStart="64dp"-->
+    <!--            android:layout_marginEnd="64dp" />-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:src="@drawable/ic_info"-->
+    <!--            android:contentDescription="Info" />-->
+    <!--    </LinearLayout>-->
+
+</LinearLayout>

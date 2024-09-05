@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB99"
+    android:padding="24dp">
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:textAlignment="center"
+        android:text="Select friends and share your live location"
+        android:textColor="#FFB964"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Tap to select Text -->
+    <TextView
+        android:id="@+id/tap_to_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Tap to select"
+        android:textColor="#FFB964"
+        android:textSize="16sp" />
+
+    <!-- Search Box -->
+    <RelativeLayout
+        android:id="@+id/search_box"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/tap_to_select"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:elevation="4dp"
+        android:clipToOutline="true"
+        android:backgroundTint="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp">
+
+        <!-- Search Icon -->
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/search_img"/>
+
+
+        <!-- Search Input -->
+        <EditText
+            android:id="@+id/search_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/search_icon"
+            android:layout_marginStart="8dp"
+            android:hint="Type to Select"
+            android:textColorHint="#FFB964"
+            android:background="@android:color/transparent"
+            android:inputType="text" />
+    </RelativeLayout>
+
+    <!-- All Contacts Text -->
+    <TextView
+        android:id="@+id/all_contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_box"
+        android:layout_marginStart="24dp"
+        android:text="All contacts"
+        android:textColor="#FFB964"
+        android:textSize="16sp" />
+
+    <!-- Contacts Grid -->
+    <GridLayout
+        android:id="@+id/contacts_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/all_contacts"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="9dp"
+        android:columnCount="3"
+        android:rowCount="2"
+        android:layout_marginBottom="24dp"
+        android:alignmentMode="alignBounds">
+
+        <!-- Button 1 -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/round_edittext"
+            android:text="Harshitha"
+            android:textColor="#FFB964"
+            android:textSize="14sp" />
+
+        <!-- Button 2 -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/round_edittext"
+            android:text="Aasavari"
+            android:textColor="#FFB964"
+            android:textSize="14sp" />
+
+        <!-- Button 3 -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/round_edittext"
+            android:text="Sarthak"
+            android:textColor="#FFB964"
+            android:textSize="14sp" />
+
+        <!-- Button 4 -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/round_edittext"
+            android:text="Mehershad"
+            android:textColor="#FFB964"
+            android:textSize="14sp" />
+
+        <!-- Button 5 -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/round_edittext"
+            android:text="Soham"
+            android:textColor="#FFB964"
+            android:textSize="14sp" />
+
+        <!-- Button 6 -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/round_edittext"
+            android:text="Aarushi"
+            android:textColor="#FFB964"
+            android:textSize="14sp" />
+    </GridLayout>
+
+    <!-- Live location duration Text -->
+    <TextView
+        android:id="@+id/live_location_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contacts_grid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Live location duration"
+        android:textColor="#FFB964"
+        android:textSize="16sp" />
+
+    <!-- Radio Buttons for Duration -->
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/live_location_duration"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_always"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FFB964"
+            android:text="Always"
+            android:textColor="#FFB964"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radio_one_hour"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FFB964"
+            android:text="1 hour"
+            android:textColor="#FFB964"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radio_eight_hour"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FFB964"
+            android:text="8 hour"
+            android:textColor="#FFB964"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+    <!-- Continue Button -->
+    <Button
+        android:id="@+id/continue_button"
+        android:layout_width="560dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_group"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Continue"
+        android:background="@drawable/round_button"
+        android:textColor="#FFFFFF"
+        android:padding="15dp" />
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#FFF8E1"
+    tools:context=".sign_in">
+
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="30sp"
+        android:textColor="#FFA726"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Emai"
+        android:padding="15dp"
+        android:background="@drawable/round_edittext"
+        android:layout_marginBottom="20dp"
+        android:drawablePadding="10dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:background="@drawable/round_edittext"
+        android:layout_marginBottom="20dp"
+        android:drawablePadding="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <CheckBox
+            android:id="@+id/rememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember me"
+            android:textColor="#FFA726"/>
+
+        <TextView
+            android:id="@+id/forgetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget Password"
+            android:textColor="#FFA726"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:gravity="end"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:background="@drawable/round_button"
+        android:textColor="#FFFFFF"
+        android:padding="15dp"
+        android:layout_marginBottom="20dp"/>
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/orSignInWith"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Or Sign in with"-->
+    <!--        android:textColor="#FFA726"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:layout_marginBottom="20dp"/>-->
+
+    <!--    <GridLayout-->
+    <!--        android:id="@+id/thirdPartySignIn"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginBottom="20dp"-->
+    <!--        android:columnCount="3"-->
+    <!--        android:rowCount="1"-->
+    <!--        android:alignmentMode="alignBounds"-->
+    <!--        android:layout_gravity="center">-->
+
+    <!-- Example buttons for third-party sign-in -->
+    <!--        <Button-->
+    <!--            android:id="@+id/signInGoogle"-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_columnWeight="1"-->
+    <!--            android:text="Google"-->
+    <!--            android:backgroundTint="#DB4437"-->
+    <!--            android:textColor="#FFFFFF"-->
+    <!--            android:padding="10dp"/>-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/signInFacebook"-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_columnWeight="1"-->
+    <!--            android:text="Facebook"-->
+    <!--            android:backgroundTint="#3b5998"-->
+    <!--            android:textColor="#FFFFFF"-->
+    <!--            android:padding="10dp"/>-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/signInTwitter"-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_columnWeight="1"-->
+    <!--            android:text="Twitter"-->
+    <!--            android:backgroundTint="#1DA1F2"-->
+    <!--            android:textColor="#FFFFFF"-->
+    <!--            android:padding="10dp"/>-->
+    <!--    </GridLayout>-->
+</LinearLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "23788191386",
+    "project_id": "draupadi-8aaba",
+    "storage_bucket": "draupadi-8aaba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23788191386:android:5286895ff7005dd882a923",
+        "android_client_info": {
+          "package_name": "com.example.draupadi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAet4WYZacLo2JGYkzzv9N0lpttiFPPCaE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23788191386:android:eed49c7636610dc082a923",
+        "android_client_info": {
+          "package_name": "com.example.hersafespace"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAet4WYZacLo2JGYkzzv9N0lpttiFPPCaE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
