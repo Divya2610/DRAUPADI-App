@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "23788191386",
+    "firebase_url": "https://draupadi-8aaba-default-rtdb.firebaseio.com",
     "project_id": "draupadi-8aaba",
     "storage_bucket": "draupadi-8aaba.appspot.com"
   },
@@ -28,7 +29,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:23788191386:android:eed49c7636610dc082a923",
         "android_client_info": {
-          "package_name": "com.example.hersafespace"
+          "package_name": "com.example.draupadi"
         }
       },
       "oauth_client": [],
@@ -44,5 +45,9 @@
       }
     }
   ],
-  "configuration_version": "1"
+  "configuration_version": "1",
+  "rules": {
+    ".read": "true",
+    ".write": "true"
+  }
 }
